@@ -48,14 +48,14 @@ class App extends React.Component {
                 <h1>Conversor de Temperatura</h1>
 
                 Temperatura: <br />
-                <input type="number" name="temperature" value={this.state.grade} onChange={event => this.onInputChanged(event)} />
+                <input type="number" name="temperature" onChange={event => this.onInputChanged(event)} />
 
                 <label>
-                    <input type="radio" name="scale" value="F" checked={this.state.scale === 'F'}
+                    <input type="radio" name="scale" value="F" 
                         onChange={event => this.onInputChanged(event)} /> Fahrenheit
                 </label>
                 <label>
-                    <input type="radio" name="scale" value="C" checked={this.state.scale === 'C'}
+                    <input type="radio" name="scale" value="C" 
                         onChange={event => this.onInputChanged(event)} /> Celsius
                 </label>
 
