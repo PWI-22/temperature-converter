@@ -52,10 +52,12 @@ class App extends React.Component {
 
                 <label>
                     <input type="radio" name="scale" value="F" 
+                        checked={this.state.scale === 'F'}
                         onChange={event => this.onInputChanged(event)} /> Fahrenheit
                 </label>
                 <label>
                     <input type="radio" name="scale" value="C" 
+                        checked={this.state.scale === 'C'}
                         onChange={event => this.onInputChanged(event)} /> Celsius
                 </label>
 
